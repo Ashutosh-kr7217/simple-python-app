@@ -24,3 +24,6 @@ jobs:
 
       - name: Run tests
         run: python -m unittest discover
+
+      - name: show working directory
+        run: pwd
