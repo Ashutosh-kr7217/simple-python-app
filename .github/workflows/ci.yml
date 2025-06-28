@@ -41,7 +41,7 @@ jobs:
             Commit: ${{ github.sha }}
             Repo: ${{ github.repository }}
           from: "GitHub CI <ashutosh7217@gmail.com>"
-          to: ashutosh.personal@gmail.com
+          to: krashutosh7217@gmail.com
 
 
   #check:
