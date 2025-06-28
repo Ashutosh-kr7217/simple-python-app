@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Ashutosh-kr7217/hello-world-javascript-action@1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b
+        uses: Ashutosh-kr7217/hello-world-javascript-action@b3d306d2e2c33c4b1531e7ef7977f19d592fe9e9
         with:
           who-to-greet: Ashutosh
 
