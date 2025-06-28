@@ -32,5 +32,8 @@ jobs:
       - name: show working directory
         run: pwd
 
-      - name: show working directory
+      - name: list files
+        run: ls -ltr
+
+      - name: run python file
         run: python main.py
