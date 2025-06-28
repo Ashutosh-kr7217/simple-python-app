@@ -35,8 +35,8 @@ jobs:
       - name: list files
         run: |
           ls -ltr
-          which python
-          python --version
+          which python3 || echo "python3 not found"
+          python3 --version || echo "python3 not installed"
 
       #- name: run python file
        # run: python main.py
