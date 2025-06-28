@@ -25,6 +25,25 @@ jobs:
       - name: Run tests
         run: python -m unittest discover
 
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "🚀 Build Notification"
+          body: |
+            Hello Ashutosh,
+      
+            Your workflow run has finished successfully.
+      
+            Commit: ${{ github.sha }}
+            Repo: ${{ github.repository }}
+          from: "GitHub CI <ashutosh7217@gmail.com>"
+          to: ashutosh.personal@gmail.com
+
+
   #check:
   #  runs-on: self-hosted
 
