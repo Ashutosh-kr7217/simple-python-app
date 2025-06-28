@@ -38,5 +38,5 @@ jobs:
           which python
           python --version
 
-      - name: run python file
+      #- name: run python file
        # run: python main.py
