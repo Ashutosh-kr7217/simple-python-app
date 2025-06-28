@@ -25,5 +25,12 @@ jobs:
       - name: Run tests
         run: python -m unittest discover
 
+  check:
+    runs-on: self-hosted
+
+    steps:
       - name: show working directory
         run: pwd
+
+      - name: show working directory
+        run: python main.py
